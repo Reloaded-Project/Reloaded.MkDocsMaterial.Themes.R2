@@ -125,6 +125,10 @@ Your page should then be live.
 
     Refer to [Contributing](contributing.md#website-live-preview) for instructions on how to locally edit and modify the wiki.
 
+!!! note
+
+    For Reloaded3 theme use `reloaded3-slate` instead of `reloaded-slate`.
+
 ## Extra
 
 !!! info
