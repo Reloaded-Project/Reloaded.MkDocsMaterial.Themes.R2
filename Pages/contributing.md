@@ -5,7 +5,18 @@
     This page shows you how to contribute to any documentation page or wiki 
     based on this template.
 
+!!! note
+
+    This theme is forked from my theme for [Nexus Docs](https://nexus-mods.github.io/NexusMods.MkDocsMaterial.Themes.Next);
+    and this page is synced with that.
+
 ## Tutorial
+
+!!! note
+
+    If you are editing the repository with the theme itself on Windows, it might be a good idea to run
+    `git config core.symlinks true` first to allow git to create symlinks on clone.
+
 You should learn the basics of `git`, an easy way is to give [GitHub Desktop (Tutorial)](https://www.youtube.com/watch?v=77W2JSL7-r8) a go.  
 It's only 15 minutes 😀.
 

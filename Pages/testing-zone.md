@@ -6,6 +6,16 @@
 
 ## Custom Admonitions
 
+!!! nexus "[Reloaded](https://reloaded-project.github.io/Reloaded-II/) Admonition"
+
+    An admonition featuring a Reloaded logo.
+    My source is in [Stylesheets/extra.css](../Stylesheets/extra.css) as `Custom 'reloaded' admonition`.  
+
+!!! reloadedheart "Heart Admonition"
+
+    An admonition featuring a heart; because we want to contribute back to the open source community.  
+    My source is in [Stylesheets/extra.css](../Stylesheets/extra.css) as `Custom 'reloaded heart' admonition`.
+
 !!! nexus "[Nexus](https://www.nexusmods.com) Admonition"
 
     An admonition featuring a Nexus logo.

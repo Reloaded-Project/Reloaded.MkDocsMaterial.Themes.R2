@@ -1,15 +1,15 @@
-site_name: Nexus NX MkDocs Theme
-site_url: https://github.com/Nexus-Mods/NexusMods.MkDocsMaterial.Themes.Next
+site_name: Reloaded MkDocs Theme
+site_url: https://github.com/Reloaded-Project/Reloaded.MkDocsMaterial.Themes.R2
 
-repo_name: Nexus-Mods/NexusMods.MkDocsMaterial.Themes.Next
-repo_url: https://github.com/Nexus-Mods/NexusMods.MkDocsMaterial.Themes.Next
+repo_name: Reloaded-Project/Reloaded.MkDocsMaterial.Themes.R2
+repo_url: https://github.com/Reloaded-Project/Reloaded.MkDocsMaterial.Themes.R2
 
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/Nexus-Mods
+      link: https://github.com/Reloaded-Project
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/NexusSites
+      link: https://twitter.com/thesewer56?lang=en-GB
 
 extra_css:
   - Stylesheets/extra.css
@@ -39,7 +39,7 @@ markdown_extensions:
 theme:
   name: material
   palette:
-    scheme: nexus-slate
+    scheme: reloaded-slate
   features:
     - navigation.instant
    

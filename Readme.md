@@ -1,1 +1,1 @@
-﻿Please visit the [documentation site for usage instructions & more](https://nexus-mods.github.io/NexusMods.MkDocsMaterial.Themes.Next/).
+﻿Please visit the [documentation site for usage instructions & more](https://reloaded-project.github.io/Reloaded.MkDocsMaterial.Themes.R2/).

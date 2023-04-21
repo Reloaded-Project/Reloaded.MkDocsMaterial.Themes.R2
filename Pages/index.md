@@ -4,42 +4,41 @@ hide:
 ---
 
 <div align="center">
-	<h1>The Nexus MkDocs Theme</h1>
-	<img src="../Images/Nexus-Icon.png" width="150" align="center" />
+	<h1>The Reloaded MkDocs Theme</h1>
+	<img src="../Images/Reloaded-Icon.png" width="150" align="center" />
 	<br/> <br/>
     A Theme for MkDocs Material.
     <br/>
-    That resembles the <i>Future</i> look of <i>NexusMods</i>.
+    That resembles the look of <i>Reloaded</i>.
 </div>
 
 ## About
 
-This it the NexusMods theme for Material-MkDocs, inspired by the look of [Next](https://next.nexusmods.com), 
-the future iteration of the NexusMods site.  
+This it the NexusMods theme for Material-MkDocs, inspired by the look of [Reloaded-II](https://reloaded-project.github.io/Reloaded-II/).  
 
-The overall wiki theme should look fairly close to the actual site appearance.
+The overall wiki theme should look fairly close to the actual launcher appearance.  
 
 ## Setup From Scratch
 
-- Add [this repository](https://github.com/Nexus-Mods/NexusMods.MkDocsMaterial.Themes.Next) as submodule to `docs/Nexus`.
+- Add [this repository](https://github.com/Reloaded-Project/Reloaded.MkDocsMaterial.Themes.R2) as submodule to `docs/Reloaded`.
 - Save the following configuration as `mkdocs.yml` in your repository root.
 
 ```yaml
-site_name: Nexus NX MkDocs Theme
-site_url: https://github.com/Nexus-Mods/NexusMods.MkDocsMaterial.Themes.Next
+site_name: Reloaded MkDocs Theme
+site_url: https://github.com/Reloaded-Project/Reloaded.MkDocsMaterial.Themes.R2
 
-repo_name: Nexus-Mods/NexusMods.MkDocsMaterial.Themes.Next
-repo_url: https://github.com/Nexus-Mods/NexusMods.MkDocsMaterial.Themes.Next
+repo_name: Reloaded-Project/Reloaded.MkDocsMaterial.Themes.R2
+repo_url: https://github.com/Reloaded-Project/Reloaded.MkDocsMaterial.Themes.R2
 
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/Nexus-Mods
+      link: https://github.com/Reloaded-Project
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/NexusSites
+      link: https://twitter.com/thesewer56?lang=en-GB
 
 extra_css:
-  - Nexus/Stylesheets/extra.css
+  - Reloaded/Stylesheets/extra.css
 
 markdown_extensions:
   - admonition
@@ -66,7 +65,7 @@ markdown_extensions:
 theme:
   name: material
   palette:
-    scheme: nexus-slate
+    scheme: reloaded-slate
   features:
     - navigation.instant
 
@@ -133,9 +132,8 @@ Your page should then be live.
     Most documentation pages will also include additional plugins; some which are used in the pages here.  
     Here is a sample complete mkdocs.yml you can copy to your project for reference.  
 
-
 ## Technical Questions
 
-If you have questions/bug reports/etc. feel free to [Open an Issue](https://github.com/Nexus-Mods/NexusMods.MkDocsMaterial.Themes.Next/issues/new).
+If you have questions/bug reports/etc. feel free to [Open an Issue](https://github.com/Reloaded-Project/Reloaded.MkDocsMaterial.Themes.R2/issues/new).
 
-Happy Documenting 🧡
+Happy Documenting ❤️
