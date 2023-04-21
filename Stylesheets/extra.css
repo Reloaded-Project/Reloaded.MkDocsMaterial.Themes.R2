@@ -160,7 +160,7 @@
 
   /* Accent color shades */
   --md-accent-fg-color:               #793939;
-  --md-accent-fg-color--transparent:  #79393930;
+  --md-accent-fg-color--transparent:  #79393960;
 
   --md-accent-bg-color:               #181818;
   --md-accent-bg-color--light:        #181818;
@@ -189,7 +189,7 @@
   --md-default-fg-color:             var(--nexus-font-primary);
   --md-default-fg-color--light:      var(--nexus-font-secondary);
   --md-default-fg-color--lighter:    var(--nexus-font-tertiary);
-  --md-default-fg-color--lightest:   rgba(var(--nexus-font-primary-rgb), 0.12);
+  --md-default-fg-color--lightest:   rgba(var(--nexus-font-primary-rgb), 0.04);
   --md-default-bg-color:             var(--nexus-background-secondary);
   --md-default-bg-color--light:      var(--nexus-background-content-primary);
   --md-default-bg-color--lighter:    var(--nexus-background-tertiary);
