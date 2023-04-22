@@ -413,17 +413,18 @@
   background-color: var(--md-primary-fg-color--darker);
 }
 
-[data-md-color-scheme="reloaded3-slate"] .md-nav--primary .md-nav__title[for=__drawer] {
-  background-color: var(--md-primary-fg-color--darker);
-  color: var(--md-primary-bg-color);
-  font-weight: 700;
-}
-
+@media screen and (max-width: 76.1875em) {
+  /* Title in Drawer */
+  [data-md-color-scheme="reloaded3-slate"] .md-nav--primary .md-nav__title[for=__drawer] {
+    background-color: var(--md-primary-fg-color--darker);
+    color: var(--md-primary-bg-color);
+    font-weight: 700;
+  }
+} 
+  
 [data-md-color-scheme="reloaded3-slate"] .md-nav__source {
   background-color: var(--md-primary-fg-color--darkest);
   color: var(--md-primary-bg-color);
-  display: block;
-  padding: 0 0.2rem;
 }
 
 .md-nav__title {
