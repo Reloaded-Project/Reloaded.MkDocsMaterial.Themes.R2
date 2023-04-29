@@ -39,7 +39,7 @@ markdown_extensions:
 theme:
   name: material
   palette:
-    scheme: reloaded-slate
+    scheme: reloaded3-slate
   features:
     - navigation.instant
    
