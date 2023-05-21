@@ -51,6 +51,7 @@ plugins:
 
 nav:
   - Home: Pages/index.md
+  - License: Pages/license.md
   - Contributing: Pages/contributing.md
   - Testing Zone: Pages/testing-zone.md
     
