@@ -59,8 +59,8 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 theme:
   name: material
@@ -79,45 +79,28 @@ nav:
 - Add a GitHub Actions workload in `.github/workflows/DeployMkDocs.yml`.
 
 ```yaml
-name: DeployMkDocs
+name: Deploy MkDocs
 
-# Controls when the action will run. 
 on:
-  # Triggers the workflow on push on the master branch
   push:
     branches: [ main ]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     steps:
-      
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Checkout Branch
-        uses: actions/checkout@v2
-        with:
-          submodules: recursive
-
-      # Deploy MkDocs
       - name: Deploy MkDocs
-        # You may pin to the exact commit or the version.
-        # uses: mhausenblas/mkdocs-deploy-gh-pages@66340182cb2a1a63f8a3783e3e2146b7d151a0bb
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: Reloaded-Project/reloaded-project-configurations-rust/.github/actions/deploy-mkdocs-documentation@v1
+        with:
           REQUIREMENTS: ./docs/requirements.txt
 ```
 
-- Push to GitHub, this should produce a GitHub Pages site.  
-- Go to `Settings -> Pages` in your repo and select `gh-pages` branch to enable GitHub pages. 
+- Push to GitHub, this should produce a GitHub Pages site. 
 
 Your page should then be live.
 
