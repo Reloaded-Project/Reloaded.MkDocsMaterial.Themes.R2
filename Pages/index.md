@@ -120,6 +120,10 @@ Your page should then be live.
 
     For Reloaded3 theme use `reloaded3-slate` instead of `reloaded-slate`.
 
+!!! note 
+
+    If you run into issues deploying, make sure `Settings->Pages` has `Build and Deployment` source set as `GitHub Actions`.
+
 ## Extra
 
 !!! info
