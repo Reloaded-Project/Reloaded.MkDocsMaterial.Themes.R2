@@ -14,9 +14,14 @@ on:
       - "docs/**"
 
 jobs:
-  build-and-deploy:
+  build:
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       pages: write
       id-token: write
-    uses: Nexus-Mods/NexusMods.App.Meta/.github/workflows/mkdocs-build-and-deploy.yaml@main
+    steps:
+      - name: Deploy MkDocs
+        uses: Reloaded-Project/reloaded-project-configurations-rust/.github/actions/deploy-mkdocs-documentation@v1
+        with:
+          REQUIREMENTS: ./docs/requirements.txt

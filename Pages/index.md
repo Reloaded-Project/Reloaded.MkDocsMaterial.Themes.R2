@@ -79,12 +79,20 @@ nav:
 - Add a GitHub Actions workload in `.github/workflows/DeployMkDocs.yml`.
 
 ```yaml
-name: Deploy MkDocs
+name: MkDocs Build and Deploy
 
 on:
+  workflow_dispatch:
   push:
     branches: [ main ]
-  workflow_dispatch:
+    paths:
+      - "mkdocs.yml"
+      - "docs/**"
+  pull_request:
+    branches: [ main ]
+    paths:
+      - "mkdocs.yml"
+      - "docs/**"
 
 jobs:
   build:
