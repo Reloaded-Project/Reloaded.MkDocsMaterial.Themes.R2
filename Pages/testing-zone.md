@@ -6,7 +6,7 @@
 
 ## Custom Admonitions
 
-!!! nexus "[Reloaded](https://reloaded-project.github.io/Reloaded-II/) Admonition"
+!!! reloaded "[Reloaded](https://reloaded-project.github.io/Reloaded-II/) Admonition"
 
     An admonition featuring a Reloaded logo.
     My source is in [Stylesheets/extra.css](../Stylesheets/extra.css) as `Custom 'reloaded' admonition`.
