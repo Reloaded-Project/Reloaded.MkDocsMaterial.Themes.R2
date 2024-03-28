@@ -9,26 +9,26 @@
 !!! nexus "[Reloaded](https://reloaded-project.github.io/Reloaded-II/) Admonition"
 
     An admonition featuring a Reloaded logo.
-    My source is in [Stylesheets/extra.css](../Stylesheets/extra.css) as `Custom 'reloaded' admonition`.  
+    My source is in [Stylesheets/extra.css](../Stylesheets/extra.css) as `Custom 'reloaded' admonition`.
 
 !!! reloadedheart "Heart Admonition"
 
-    An admonition featuring a heart; because we want to contribute back to the open source community.  
+    An admonition featuring a heart; because we want to contribute back to the open source community.
     My source is in [Stylesheets/extra.css](../Stylesheets/extra.css) as `Custom 'reloaded heart' admonition`.
 
 !!! nexus "[Nexus](https://www.nexusmods.com) Admonition"
 
     An admonition featuring a Nexus logo.
-    My source is in [Stylesheets/extra.css](../Stylesheets/extra.css) as `Custom 'nexus' admonition`.  
+    My source is in [Stylesheets/extra.css](../Stylesheets/extra.css) as `Custom 'nexus' admonition`.
 
 !!! nexusheart "Heart Admonition"
 
-    An admonition featuring a heart; because we want to contribute back to the open source community.  
-    My source is in [Stylesheets/extra.css](../Stylesheets/extra.css) as `Custom 'nexus heart' admonition`.  
+    An admonition featuring a heart; because we want to contribute back to the open source community.
+    My source is in [Stylesheets/extra.css](../Stylesheets/extra.css) as `Custom 'nexus heart' admonition`.
 
 ## Mermaid Diagram
 
-Flowchart ([Source: Nexus Archive Library](https://nexus-mods.github.io/NexusMods.Archives.Nx/)):  
+Flowchart ([Source: Nexus Archive Library](https://nexus-mods.github.io/NexusMods.Archives.Nx/)):
 
 ```mermaid
 flowchart TD
@@ -41,12 +41,12 @@ flowchart TD
     end
 
     subgraph Block 0
-        ModConfig.json -.-> Updates.json 
-        Updates.json -.-> more["... more .json files"]        
+        ModConfig.json -.-> Updates.json
+        Updates.json -.-> more["... more .json files"]
     end
 ```
 
-Sequence Diagram ([Source: Reloaded3 Specification](https://reloaded-project.github.io/Reloaded-III/Loader/Core-Architecture/#from-perspective-of-layer-2-game-support-mod)):  
+Sequence Diagram ([Source: Reloaded3 Specification](https://reloaded-project.github.io/Reloaded-III/Loader/Core-Architecture/#from-perspective-of-layer-2-game-support-mod)):
 
 ```mermaid
 sequenceDiagram
@@ -68,7 +68,7 @@ sequenceDiagram
     Persona 5 Royal Support->>CRI CPK Archive Support: Add Files from 'Joker Costume' to CPK Archive (via API)
 ```
 
-State Diagram ([Source: Mermaid Docs](https://mermaid.js.org/syntax/stateDiagram.html)):  
+State Diagram ([Source: Mermaid Docs](https://mermaid.js.org/syntax/stateDiagram.html)):
 
 ```mermaid
 stateDiagram-v2
@@ -109,23 +109,23 @@ Snippet from C# version of [Sewer's Virtual FileSystem (VFS)](https://github.com
 public bool TryGetFolderUpper(ReadOnlySpan<char> folderPath, out SpanOfCharDict<TTarget> value)
 {
     // Must be O(1)
-    value = default!;        
-    
+    value = default!;
+
     // Compare equality.
     // Note to devs: Do not invert branches, we optimise for hot paths here.
     if (folderPath.StartsWith(Prefix))
     {
         // Check for subfolder in branchless way.
         // In CLR, bool is length 1, so conversion to byte should be safe.
-        // Even suppose it is not; as long as code is little endian; truncating int/4 bytes to byte still results 
+        // Even suppose it is not; as long as code is little endian; truncating int/4 bytes to byte still results
         // in correct answer.
         var hasSubfolder = Prefix.Length != folderPath.Length;
         var hasSubfolderByte = Unsafe.As<bool, byte>(ref hasSubfolder);
         var nextFolder = folderPath.SliceFast(Prefix.Length + hasSubfolderByte);
-        
+
         return SubfolderToFiles.TryGetValue(nextFolder, out value!);
     }
-    
+
     return false;
 }
 ```
@@ -141,7 +141,7 @@ float Q_rsqrt( float number )
 	x2 = number * 0.5F;
 	y  = number;
 	i  = * ( long * ) &y;                       // evil floating point bit level hacking
-	i  = 0x5f3759df - ( i >> 1 );               // what the fuck? 
+	i  = 0x5f3759df - ( i >> 1 );               // what the fuck?
 	y  = * ( float * ) &i;
 	y  = y * ( threehalfs - ( x2 * y * y ) );   // 1st iteration
 //	y  = y * ( threehalfs - ( x2 * y * y ) );   // 2nd iteration, this can be removed

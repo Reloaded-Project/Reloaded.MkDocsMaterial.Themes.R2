@@ -1,6 +1,6 @@
 # The Reloaded Project License
 
-Components of the Reloaded-Project are governed by the *GPLv3* license as of May 2023.  
+Components of the Reloaded-Project are governed by the *GPLv3* license as of May 2023.
 Prior versions of the project were under the LGPLv3 license.
 
 The complete license text can be found at the end of this document.
@@ -10,14 +10,14 @@ Please note, though, that the full license text is the final legal authority.
 
 ## Why was GPL v3 chosen?
 
-The primary objective is to prevent closed-source, commercial exploitation of the project.  
+The primary objective is to prevent closed-source, commercial exploitation of the project.
 We want to ensure that the project isn't used within a proprietary environment for
 profit-making purposes such as:
 
 - Being sold behind a Patreon paywall.
 - Being integrated into a closed-source commercial product for sale.
 
-The Reloaded Project is a labour of love from unpaid hobbyist volunteers.  
+The Reloaded Project is a labour of love from unpaid hobbyist volunteers.
 It wasn't designed for commercial use, and exploiting it for profit feels fundamentally unfair.
 
 While the GPLv3 license doesn't prohibit commercial use outright, it does prevent commercial
@@ -41,11 +41,11 @@ This often applies to non-professional programmers, learners, or those
 with no intent to exploit the project. We believe in understanding and
 leniency for those who might not know better.
 
-GPL v3 exists to protect the project and its contributors.  
-If you're not exploiting the project for commercial gain, you're not hurting us; 
-and we will not enforce the terms of the GPL.  
+GPL v3 exists to protect the project and its contributors.
+If you're not exploiting the project for commercial gain, you're not hurting us;
+and we will not enforce the terms of the GPL.
 
-If you are interested in obtaining a commercial license, or want an explicit written exemption, 
+If you are interested in obtaining a commercial license, or want an explicit written exemption,
 please get in touch with the repository owners.
 
 ## Can I link Reloaded Libraries statically/dynamically?
@@ -122,7 +122,7 @@ In these cases, the Reloaded Project is committed to clearly disclosing the usag
 This approach ensures we honor the contributions of the open source community at large, respect the original
 licenses, and maintain transparency with our users about where code originates from.
 
-Any files/methods or snippets marked with those attributes may be consumed using their original license terms.  
+Any files/methods or snippets marked with those attributes may be consumed using their original license terms.
 i.e. If a method is marked with `[MITLicense]`, you may use it under the terms of the MIT license.
 
 ## Contributing to the Reloaded Project
@@ -765,15 +765,15 @@ All rights reserved.
 
 ## MIT License (MIT)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
-documentation files (the “Software”), to deal in the Software without restriction, including without limitation the 
-rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to 
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+documentation files (the “Software”), to deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to
 permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of 
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of
 the Software.
 
-THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO 
-THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS 
-OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
+THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS
+OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

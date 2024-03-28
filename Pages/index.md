@@ -14,9 +14,9 @@ hide:
 
 ## About
 
-This it the NexusMods theme for Material-MkDocs, inspired by the look of [Reloaded-II](https://reloaded-project.github.io/Reloaded-II/).  
+This it the NexusMods theme for Material-MkDocs, inspired by the look of [Reloaded-II](https://reloaded-project.github.io/Reloaded-II/).
 
-The overall wiki theme should look fairly close to the actual launcher appearance.  
+The overall wiki theme should look fairly close to the actual launcher appearance.
 
 ## Setup From Scratch
 
@@ -108,7 +108,7 @@ jobs:
           REQUIREMENTS: ./docs/requirements.txt
 ```
 
-- Push to GitHub, this should produce a GitHub Pages site. 
+- Push to GitHub, this should produce a GitHub Pages site.
 
 Your page should then be live.
 
@@ -120,7 +120,7 @@ Your page should then be live.
 
     For Reloaded3 theme use `reloaded3-slate` instead of `reloaded-slate`.
 
-!!! note 
+!!! note
 
     If you run into issues deploying, make sure `Settings->Pages` has `Build and Deployment` source set as `GitHub Actions`.
 
@@ -128,8 +128,8 @@ Your page should then be live.
 
 !!! info
 
-    Most documentation pages will also include additional plugins; some which are used in the pages here.  
-    Here is a sample complete mkdocs.yml you can copy to your project for reference.  
+    Most documentation pages will also include additional plugins; some which are used in the pages here.
+    Here is a sample complete mkdocs.yml you can copy to your project for reference.
 
 ## Technical Questions
 

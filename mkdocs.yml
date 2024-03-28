@@ -42,7 +42,7 @@ theme:
     scheme: reloaded3-slate
   features:
     - navigation.instant
-   
+
 plugins:
   - search
   - redirects:

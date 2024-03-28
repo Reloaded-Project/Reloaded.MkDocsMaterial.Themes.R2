@@ -2,7 +2,7 @@
 
 !!! info
 
-    This page shows you how to contribute to any documentation page or wiki 
+    This page shows you how to contribute to any documentation page or wiki
     based on this template.
 
 !!! note
@@ -17,7 +17,7 @@
     If you are editing the repository with the theme itself on Windows, it might be a good idea to run
     `git config core.symlinks true` first to allow git to create symlinks on clone.
 
-You should learn the basics of `git`, an easy way is to give [GitHub Desktop (Tutorial)](https://www.youtube.com/watch?v=77W2JSL7-r8) a go.  
+You should learn the basics of `git`, an easy way is to give [GitHub Desktop (Tutorial)](https://www.youtube.com/watch?v=77W2JSL7-r8) a go.
 It's only 15 minutes 😀.
 
 1. Create a GitHub account.
@@ -38,8 +38,8 @@ It's only 15 minutes 😀.
 
     Consider using a [*Markdown Cheat Sheet*](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) if you are new to markdown.
 
-    I recommend using a markdown editor such as `Typora`.  
-    Personally I just work from inside `Rider`.  
+    I recommend using a markdown editor such as `Typora`.
+    Personally I just work from inside `Rider`.
 
 5. Commit the changes and push to GitHub.
 

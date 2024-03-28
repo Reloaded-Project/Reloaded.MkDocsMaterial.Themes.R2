@@ -15,7 +15,7 @@
   /*
       Default Variables
   */
-  
+
   /* For reuse later */
   --md-primary-fg-color-rgb: 217, 143, 64;
 
@@ -33,7 +33,7 @@
 
   --md-accent-bg-color:               #2A2C2B;
   --md-accent-bg-color--light:        #2A2C2B;
-  
+
 /*
    // Slate's hue in the range [0,360] - change this variable to alter the tone
    // of the theme, e.g. to make it more redish or greenish. This is a slate-
@@ -260,7 +260,7 @@
   img[src$="#gh-light-mode-only"] {
     display: none;
   }
-  
+
   /* Show images for dark mode */
   img[src$="#only-dark"],
   img[src$="#gh-dark-mode-only"] {
@@ -401,7 +401,7 @@
   img[src$="#gh-light-mode-only"] {
     display: none;
   }
-  
+
   /* Show images for dark mode */
   img[src$="#only-dark"],
   img[src$="#gh-dark-mode-only"] {
@@ -420,8 +420,8 @@
     color: var(--md-primary-bg-color);
     font-weight: 700;
   }
-} 
-  
+}
+
 [data-md-color-scheme="reloaded3-slate"] .md-nav__source {
   background-color: var(--md-primary-fg-color--darkest);
   color: var(--md-primary-bg-color);

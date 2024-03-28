@@ -42,10 +42,10 @@ This often applies to non-professional programmers, learners, or those
 with no intent to exploit the project. We believe in understanding and
 leniency for those who might not know better.
 
-GPL v3 exists to protect the project and its contributors. If you're not exploiting the project for commercial 
+GPL v3 exists to protect the project and its contributors. If you're not exploiting the project for commercial
 gain, you're not hurting us; and we will not enforce the terms of the GPL.
 
-If you are interested in obtaining a commercial license, or want an explicit written exemption, 
+If you are interested in obtaining a commercial license, or want an explicit written exemption,
 please get in touch with the repository owners.
 
 ## Can I link Reloaded Libraries statically/dynamically?
@@ -64,7 +64,7 @@ You're free to use our libraries for projects that you undertake
 for your own learning, hobby or personal enjoyment. This includes creating mods for your
 favorite games or building your own applications for personal use.
 
-### Educational Use 
+### Educational Use
 Teachers and students are welcome to use our libraries as a learning
 resource. You can incorporate them into your teaching materials, student projects, coding
 bootcamps, workshops, etc.
@@ -85,7 +85,7 @@ you must ensure compliance with the terms of the GPL v3 license.
 
 As Reloaded Project is a labor of love, done purely out of passion and with an aim to contribute
 to the broader community, we highly appreciate your support in providing attribution when using
-our libraries.  
+our libraries.
 
 While not legally mandatory under GPL v3, it is a simple act that can go a long
 way in recognizing the efforts of our contributors and fostering an open and collaborative atmosphere.
@@ -128,9 +128,9 @@ In these cases, the Reloaded Project is committed to clearly disclosing the usag
 This approach ensures we honor the contributions of the open source community at large, respect the original
 licenses, and maintain transparency with our users about where code originates from.
 
-Any files/methods or snippets marked with those attributes may be consumed using their original license terms.  
+Any files/methods or snippets marked with those attributes may be consumed using their original license terms.
 
-i.e. If a method is marked with `[MITLicense]`, you may use it under the terms of the MIT license.  
+i.e. If a method is marked with `[MITLicense]`, you may use it under the terms of the MIT license.
 
 ## Contributing to the Reloaded Project
 
