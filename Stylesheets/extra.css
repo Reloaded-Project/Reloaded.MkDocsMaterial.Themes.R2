@@ -1,3 +1,9 @@
+/* 
+  Import Title Font: Montserrat
+  Falls back to Roboto
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
 /*
   Nexus Mods Theme
 */
@@ -510,13 +516,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-/* Add Title Font */
-@font-face {
-  font-family: "Montserrat";
-  src: url("./Montserrat-SemiBold.ttf") format("truetype");
-  font-weight: 600;
 }
 
 /* Headers */
