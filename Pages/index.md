@@ -71,6 +71,18 @@ theme:
 
 plugins:
   - search
+  - exclude-unused-files:
+      file_types_to_check: [ "psd", "7z", "kra" ]
+      file_types_override_mode: append
+      enabled: true
+  - exclude:
+      # Exclude the Theme's own files.
+      glob:
+        - Reloaded/Pages/*
+        - Reloaded/docs/*
+        - Reloaded/Readme.md
+        - Reloaded/LICENSE
+        - Reloaded/mkdocs.yml
 
 nav:
   - Home: index.md
@@ -107,6 +119,8 @@ jobs:
         with:
           REQUIREMENTS: ./docs/requirements.txt
 ```
+
+- Copy `docs/requirements.txt` from this repository to your repository.
 
 - Push to GitHub, this should produce a GitHub Pages site.
 

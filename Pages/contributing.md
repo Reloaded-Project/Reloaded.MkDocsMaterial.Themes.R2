@@ -79,8 +79,8 @@ Here's a quick guide of how you could do it from your `command prompt` (cmd).
 
         ```bash
         # Restart your command prompt before running this command.
-        pip install mkdocs-material
-        pip install mkdocs-redirects
+        # And open command prompt where mkdocs.yml is.
+        pip install -r ./docs/requirements.txt
         ```
 
     === "Linux"
@@ -94,8 +94,8 @@ Here's a quick guide of how you could do it from your `command prompt` (cmd).
         python -m venv mkdocs # Create the environment
         source ~/mkdocs/bin/activate # Enter the environment
 
-        pip install mkdocs-material
-        pip install mkdocs-redirects
+        # Install contents of requirements file in docs.
+        pip install -r ./docs/requirements.txt
         ```
 
         Make sure you enter the environment before any time you run mkdocs.
