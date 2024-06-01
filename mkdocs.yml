@@ -3,6 +3,7 @@ site_url: https://github.com/Reloaded-Project/Reloaded.MkDocsMaterial.Themes.R2
 
 repo_name: Reloaded-Project/Reloaded.MkDocsMaterial.Themes.R2
 repo_url: https://github.com/Reloaded-Project/Reloaded.MkDocsMaterial.Themes.R2
+use_directory_urls: false
 
 extra:
   social:
@@ -44,6 +45,7 @@ theme:
     - navigation.instant
 
 plugins:
+  - offline
   - search
   - redirects:
       redirect_maps:
