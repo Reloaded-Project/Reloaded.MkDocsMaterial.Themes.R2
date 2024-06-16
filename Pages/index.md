@@ -115,9 +115,11 @@ jobs:
       id-token: write
     steps:
       - name: Deploy MkDocs
-        uses: Reloaded-Project/reloaded-project-configurations-rust/.github/actions/deploy-mkdocs-documentation@v1
+        uses: Reloaded-Project/devops-mkdocs@v1
         with:
-          REQUIREMENTS: ./docs/requirements.txt
+          requirements: ./docs/requirements.txt
+          publish-to-pages: ${{ github.event_name == 'push' }}
+          checkout-current-repo: true
 ```
 
 - Copy `docs/requirements.txt` from this repository to your repository.
