@@ -13,7 +13,7 @@ extra:
       link: https://twitter.com/thesewer56?lang=en-GB
 
 extra_css:
-  - Stylesheets/extra.css
+  - vendor/Reloaded/Stylesheets/reloaded.css
 
 markdown_extensions:
   - admonition
@@ -54,13 +54,9 @@ plugins:
       htmlmin_opts:
         remove_comments: true
       cache_safe: true
-  - redirects:
-      redirect_maps:
-        "index.md": "Pages/private/index.md"
-
 nav:
-  - Home: Pages/private/index.md
+  - Home: index.md
   - License: Pages/license.md
   - Contributing: Pages/contributing.md
   - Migration Guide: Pages/migration-guide.md
-  - Testing Zone: Pages/private/testing-zone.md
+  - Testing Zone: Pages/testing-zone.md

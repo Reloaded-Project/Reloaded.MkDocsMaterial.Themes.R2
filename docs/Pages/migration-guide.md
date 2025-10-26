@@ -4,80 +4,74 @@ This guide helps you migrate your existing Reloaded MkDocs Theme setup to the la
 
 ## Version 1.0.0 Migration
 
-If you are upgrading from a version prior to 1.0.0, follow these steps:
+!!! info "If you are upgrading from a version prior to 1.0.0, follow these steps"
 
-### 1. Directory Restructuring
+The theme now uses a vendoring approach instead of submodules. You now copy the necessary files directly instead of managing submodules. 
 
-Symlinks have been removed for simplicity, as they may not be enabled by default on Windows. All theme files are now contained within the docs directory.
+**Setup:**
 
-**Before:**
-```
-project-root/
-├── Images/
-├── Pages/
-├── Stylesheets/
-├── docs/
-└── mkdocs.yml
-```
+- Copy the contents of the `copy-me` folder from this repository to your project root
+- Skip .gitignore and mkdocs.yml if already present, and do updates below instead
 
-**After:**
-```
-project-root/
-├── docs/
-│   ├── Images/
-│   ├── Pages/
-│   │   └── private/
-│   └── Stylesheets/
-└── mkdocs.yml
-```
+The `copy-me` folder already contains the correct configuration with updated paths.
+
+**Actions Required:**
+
+- Update your `mkdocs.yml` with the changes shown above
+
+### 1. Referencing Theme Documentation
+
+If you need to reference pages from this theme's documentation (such as contributing guidelines or examples), please use the direct URLs instead of local file references.
 
 **mkdocs.yml Changes:**
 
 ```diff
- extra_css:
--  - Reloaded/Stylesheets/extra.css
-+  - Reloaded/docs/Stylesheets/extra.css
-
  nav:
--  - Home: Reloaded/Pages/index.md
--  - License: Reloaded/Pages/license.md
 -  - How to Document: Reloaded/Pages/contributing.md
 -  - Testing Zone: Reloaded/Pages/testing-zone.md
-+  - Home: Reloaded/docs/Pages/index.md
-+  - License: Reloaded/docs/Pages/license.md
-+  - How to Document: Reloaded/docs/Pages/contributing.md
-+  - Testing Zone: Reloaded/docs/Pages/testing-zone.md
++  - How to Document: https://reloaded-project.github.io/Reloaded.MkDocsMaterial.Themes.R2/Pages/contributing.html
++  - Testing Zone: https://reloaded-project.github.io/Reloaded.MkDocsMaterial.Themes.R2/Pages/testing-zone.html
 ```
 
-**Actions Required:**
-
-- Move `Images/`, `Pages/`, and `Stylesheets/` directories into `docs/`
-- Update all file references in your markdown files
-
-This was done in case of Windows users who don't have symlink access.
+Previously this was done via submodule, but turned out unnecessary.
 
 ### 2. Updated Exclude Patterns
 
-Theme-specific files have been moved to a `private` subdirectory. Update your exclude patterns to exclude the private folder:
+With the vendoring approach, exclude patterns are no longer needed for the Reloaded folder since the files are now part of your project.
+
+**mkdocs.yml Changes:**
+
+```diff
+ plugins:
+   - exclude:
+       glob:
+-        - Reloaded/docs/Pages/private/*
+-        - Reloaded/docs/*.txt
+-        - Reloaded/.gitignore
+-        - Reloaded/Readme.md
+-        - Reloaded/LICENSE
+-        - Reloaded/*.yml
+-        - Reloaded/*.py
+-        - Reloaded/venv/*
+```
+
+### 3. Image References
+
+Since the files are now vendored, you may need to move them out to your own `docs` folder.
 
 **Actions Required:**
 
-If using `mkdocs-exclude-unused-files`, update glob patterns:
+- Move any images from the vendored theme files to your `docs/Images/` folder
+- Update image references in your markdown files to use the new paths
 
-```yaml
-- exclude:
-    glob:
-      - Reloaded/docs/Pages/private/*
-      - Reloaded/docs/*.txt
-      - Reloaded/.gitignore
-      - Reloaded/Readme.md
-      - Reloaded/LICENSE
-      - Reloaded/*.yml
-      - Reloaded/*.py
-      - Reloaded/venv/*
+**Example Changes:**
+
+```diff
+- ![Reloaded Icon](Reloaded/Images/Reloaded-Icon.avif)
++ ![Reloaded Icon](Images/Reloaded-Icon.avif)
 ```
 
-### 3. Image Format Migration
+### 4. Image Format Migration
 
 All PNG images in the theme have been converted to AVIF format for better compression.
 
@@ -86,7 +80,7 @@ All PNG images in the theme have been converted to AVIF format for better compre
 - If you reference any images from the theme template (e.g., Reloaded logo), you may need to change the file extension from `.png` to `.avif`
 - Example: `../Images/Reloaded-Icon.png` → `../Images/Reloaded-Icon.avif`
 
-### 4. Build System Enhancements
+### 5. Build System Enhancements
 
 Added minification plugin for optimized builds.
 
@@ -111,13 +105,13 @@ plugins:
       cache_safe: true
 ```
 
-### 5. Setup Script Improvements
+### 6. Setup Script Improvements
 
 New automated setup script available.
 
 **Actions Required:**
 
-- Add `start_docs.py` from this repository to your root
+- Add `start_docs.py` from the `copy-me` folder to your root
 - Update `.gitignore` to include:
   ```
   # MkDocs build output
@@ -127,10 +121,7 @@ New automated setup script available.
   venv/
   ```
 
-### 6. Version Tracking
+### 7. Version Tracking
 
-Add version comment to your markdown files for future migrations:
-
-```markdown
-<!--- Reloaded.MkDocsMaterial.Themes.R2:1.0.0 --->
-```
+Version information is now stored in `version.txt` files in the `vendor` folder for
+future migration.

@@ -12,18 +12,18 @@ It's only 15 minutes 😀.
 1. Create a GitHub account.
 2. Fork this repository:
 
-    ![Image](../Images/Contribute/ForkTheRepo.avif)
+    ![Image](..//Images/Contribute/ForkTheRepo.avif)
 
     This will create a copy of the repository on your own user account, which you will be able to edit.
 
 3. Clone this repository.
 
     For example, using GitHub Desktop:
-    ![Image](../Images/Contribute/GitHubDesktop.avif)
+    ![Image](..//Images/Contribute/GitHubDesktop.avif)
 
 4. Make changes inside the `docs` folder.
 
-    ![Image](../Images/Contribute/Rider.avif)
+    ![Image](..//Images/Contribute/Rider.avif)
 
     Consider using a [*Markdown Cheat Sheet*](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) if you are new to markdown.
 
@@ -34,7 +34,7 @@ It's only 15 minutes 😀.
 
 6. Open a `Pull Request`.
 
-    ![Image](../Images/Contribute/OpenPullRequest.avif)
+    ![Image](..//Images/Contribute/OpenPullRequest.avif)
 
     Opening a `Pull Request` will allow us to review your changes before adding them with the main official page. If everything's good, we'll hit the merge button and add your changes to the official repository.
 
@@ -89,7 +89,7 @@ If you prefer to set up manually without scripts:
     mkdocs serve --livereload
     ```
 
-    ![Image](../Images/Contribute/LocalRun.avif)
+    ![Image](..//Images/Contribute/LocalRun.avif)
 
     Copy the address to your web browser and enjoy the live preview; any changes you save will be shown instantly.
 

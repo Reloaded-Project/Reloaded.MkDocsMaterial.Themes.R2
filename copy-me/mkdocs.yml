@@ -12,7 +12,7 @@ extra:
       link: https://twitter.com/thesewer56?lang=en-GB
 
 extra_css:
-  - Reloaded/docs/Stylesheets/extra.css
+  - vendor/Reloaded/Stylesheets/reloaded.css
 
 markdown_extensions:
   - admonition

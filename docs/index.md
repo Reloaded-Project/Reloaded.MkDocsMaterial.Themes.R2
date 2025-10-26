@@ -5,7 +5,7 @@ hide:
 
 <div align="center">
 	<h1>The Reloaded MkDocs Theme</h1>
-	<img src="../../Images/Reloaded-Icon.avif" width="150" align="center" />
+	<img src="Images/Reloaded-Icon.avif" width="150" align="center" />
 	<br/> <br/>
     A Theme for MkDocs Material. (Version 1.0.0)
     <br/>
@@ -21,15 +21,29 @@ The overall wiki theme should look fairly close to the actual launcher appearanc
 ## Quick Setup
 
 - **Copy the `copy-me` folder contents to your repository root** (skip `.gitignore` if you already have one)
-- Add [this repository](https://github.com/Reloaded-Project/Reloaded.MkDocsMaterial.Themes.R2) as submodule to `docs/Reloaded`.
-
 - Push to GitHub, this should produce a GitHub Pages site.
 
 Your page should then be live.
 
+## Directory Structure
+
+The theme assets are organized under the `vendor/Reloaded/` directory:
+
+```
+docs/
+├── vendor/
+│   └── Reloaded/
+│       ├── Images/          # Theme icons and images
+│       └── Stylesheets/     # Theme CSS files
+├── index.md
+└── ... (your documentation)
+```
+
+This structure keeps all Reloaded theme assets organized and separate from your content.
+
 !!! tip
 
-    Refer to [Contributing](../contributing.md#website-live-preview) for instructions on how to locally edit and modify the wiki.
+    Refer to [Contributing](Pages/contributing.md#website-live-preview) for instructions on how to locally edit and modify the wiki.
 
 !!! note
 
