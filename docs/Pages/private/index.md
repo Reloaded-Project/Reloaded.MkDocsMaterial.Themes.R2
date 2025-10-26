@@ -141,7 +141,7 @@ jobs:
     <!--- Reloaded.MkDocsMaterial.Themes.R2:1.0.0 --->
     ```
 
-    This will help you follow 'migration guides' in the future when posted here.
+    This will allow you to receive update notifications and follow migration guides in the future when posted here.
 
 - Push to GitHub, this should produce a GitHub Pages site.
 

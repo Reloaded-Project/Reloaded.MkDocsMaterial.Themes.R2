@@ -62,4 +62,5 @@ nav:
   - Home: Pages/private/index.md
   - License: Pages/license.md
   - Contributing: Pages/contributing.md
+  - Migration Guide: Pages/migration-guide.md
   - Testing Zone: Pages/private/testing-zone.md
