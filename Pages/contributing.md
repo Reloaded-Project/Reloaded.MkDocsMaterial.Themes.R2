@@ -2,20 +2,9 @@
 
 !!! info
 
-    This page shows you how to contribute to any documentation page or wiki
-    based on this template.
-
-!!! note
-
-    This theme is forked from my theme for [Nexus Docs](https://nexus-mods.github.io/NexusMods.MkDocsMaterial.Themes.Next);
-    and this page is synced with that.
+    This page shows you how to contribute to any documentation page or wiki.
 
 ## Tutorial
-
-!!! note
-
-    If you are editing the repository with the theme itself on Windows, it might be a good idea to run
-    `git config core.symlinks true` first to allow git to create symlinks on clone.
 
 You should learn the basics of `git`, an easy way is to give [GitHub Desktop (Tutorial)](https://www.youtube.com/watch?v=77W2JSL7-r8) a go.
 It's only 15 minutes 😀.
@@ -51,62 +40,67 @@ It's only 15 minutes 😀.
 
 ## Website Live Preview
 
-If you are working on the wiki locally, you can generate a live preview the full website.
-Here's a quick guide of how you could do it from your `command prompt` (cmd).
+If you are working on the wiki locally, you can generate a live preview of the full website.
 
-1. Install Python 3
+### Quick Start (Recommended)
 
-    If you have `winget` installed, or Windows 11, you can do this from the command prompt.
+**Prerequisites:** Python 3.7+ required.
 
-    === "Windows (winget)"
+- Linux: Typically pre-installed
+- macOS: Download from [python.org](https://python.org/)
+- Windows: Run `winget install Python.Python.3` in command prompt
+    - Or download manually from [python.org/downloads](https://python.org/downloads/)
 
-        ```bash
-        winget install Python.Python.3
-        ```
+Run the automated setup script from the project root:
 
-    === "Archlinux"
+```bash
+python3 start_docs.py
+```
 
-        ```
-        pacman -S python-pip # you should already have Python
-        ```
+This script will:
 
-    Otherwise download Python 3 from the official website or package manager.
+- Create a virtual environment if needed
+- Install all required dependencies
+- Start the MkDocs live server at http://127.0.0.1:8000 (paste into browser)
 
-2. Install Material for MkDocs and Plugins (Python package)
+### Manual Setup
 
+If you prefer to set up manually without scripts:
 
-    === "Windows/OSX"
-
-        ```bash
-        # Restart your command prompt before running this command.
-        # And open command prompt where mkdocs.yml is.
-        pip install -r ./docs/requirements.txt
-        ```
-
-    === "Linux"
-
-        On Linux, there is a chance that `python` might be a core part of your OS, meaning
-        that you ideally shouldn't touch the system installation.
-
-        Use virtual environments instead.
-
-        ```bash
-        python -m venv mkdocs # Create the environment
-        source ~/mkdocs/bin/activate # Enter the environment
-
-        # Install contents of requirements file in docs.
-        pip install -r ./docs/requirements.txt
-        ```
-
-        Make sure you enter the environment before any time you run mkdocs.
-
-3. Open a command prompt in the folder containing `mkdocs.yml`. and run the site locally.
+1. **Install Dependencies**
+   
     ```bash
-    # Move to project folder.
-    cd <Replace this with full path to folder containing `mkdocs.yml`>
-    mkdocs serve
+    # Navigate to the docs directory
+    cd doc/docs/Reloaded
+    
+    # Create virtual environment (only needs to be done once)
+    python3 -m venv venv
+    
+    # Activate virtual environment (do this each time you work)
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    
+    # Install requirements
+    pip install -r docs/requirements.txt
+    ```
+
+2. **Start Live Server**
+   
+    ```bash
+    mkdocs serve --livereload
     ```
 
     ![Image](../Images/Contribute/LocalRun.png)
 
     Copy the address to your web browser and enjoy the live preview; any changes you save will be shown instantly.
+
+## Troubleshooting
+
+### Windows Symlink Issues
+
+If you are editing the **Reloaded.MkDocsMaterial.Themes.R2** (this wiki's theme) repository on Windows, it might be a good idea to run:
+
+```bash
+git config core.symlinks true
+```
+
+This allows git to create symlinks on clone.
