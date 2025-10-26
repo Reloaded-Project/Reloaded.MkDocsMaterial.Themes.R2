@@ -6,7 +6,9 @@ This guide helps you migrate your existing Reloaded MkDocs Theme setup to the la
 
 If you are upgrading from a version prior to 1.0.0, follow these steps:
 
-### 1. Directory Structure Changes
+### 1. Directory Restructuring
+
+Symlinks have been removed for simplicity, as they may not be enabled by default on Windows. All theme files are now contained within the docs directory.
 
 **Before:**
 ```
@@ -132,10 +134,3 @@ Add version comment to your markdown files for future migrations:
 ```markdown
 <!--- Reloaded.MkDocsMaterial.Themes.R2:1.0.0 --->
 ```
-
-
-
-
-
-
-
