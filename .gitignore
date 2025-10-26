@@ -351,3 +351,6 @@ MigrationBackup/
 
 # Python virtual environments
 venv/
+
+# MkDocs build output
+site/

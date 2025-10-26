@@ -47,6 +47,13 @@ theme:
 plugins:
   - offline
   - search
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+      remove_comments: true
+      cache_safe: true
   - redirects:
       redirect_maps:
         "index.md": "Pages/index.md"

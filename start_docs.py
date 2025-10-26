@@ -23,13 +23,13 @@ def main():
     import argparse
     
     parser = argparse.ArgumentParser(description='Set up documentation environment')
-    parser.add_argument('--target-dir', type=str, help='Target directory for documentation (default: script directory)')
+    parser.add_argument('--docs-dir', type=str, help='Documentation directory containing mkdocs.yml and docs/ subfolder (default: script directory)')
     parser.add_argument('--project-name', type=str, default='documentation', help='Project name for messages')
     args = parser.parse_args()
     
-    # Use target directory if provided, otherwise use script directory
-    if args.target_dir:
-        script_dir = Path(args.target_dir)
+    # Use docs directory if provided, otherwise use script directory
+    if args.docs_dir:
+        script_dir = Path(args.docs_dir)
     else:
         script_dir = Path(__file__).parent
     
@@ -54,13 +54,18 @@ def main():
     
     # Install required packages
     print("Installing required packages...")
-    # Install from requirements.txt first
+    
+    # Install from requirements.txt relative to this script if it exists
+    script_requirements_file = Path(__file__).parent / "docs" / "requirements.txt"
+    if script_requirements_file.exists():
+        print(f"Installing from {script_requirements_file}...")
+        run_command([str(pip_exe), "install", "-r", str(script_requirements_file)], cwd=script_dir)
+    
+    # Install from requirements.txt in docs directory if it exists
     requirements_file = script_dir / "docs" / "requirements.txt"
     if requirements_file.exists():
+        print(f"Installing from {requirements_file}...")
         run_command([str(pip_exe), "install", "-r", str(requirements_file)], cwd=script_dir)
-    
-    # Install mkdocs-material separately
-    run_command([str(pip_exe), "install", "mkdocs-material"], cwd=script_dir)
     
     # Start MkDocs live server
     print("Starting MkDocs live server...")
