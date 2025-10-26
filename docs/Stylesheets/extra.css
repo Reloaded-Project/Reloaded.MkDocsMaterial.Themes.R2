@@ -9,10 +9,10 @@
 */
 
 :root {
-  --md-admonition-icon--nexus: url('../Images/Nexus-Icon-40.png');
-  --md-admonition-icon--nexusheart: url('../Images/Nexus-Heart-40.png');
-  --md-admonition-icon--reloaded: url('../Images/Reloaded-Icon-40.png');
-  --md-admonition-icon--reloadedheart: url('../Images/Reloaded-Heart-40.png');
+  --md-admonition-icon--nexus: url('../Images/Nexus-Icon-40.avif');
+  --md-admonition-icon--nexusheart: url('../Images/Nexus-Heart-40.avif');
+  --md-admonition-icon--reloaded: url('../Images/Reloaded-Icon-40.avif');
+  --md-admonition-icon--reloadedheart: url('../Images/Reloaded-Heart-40.avif');
 }
 
 /* Slate theme, i.e. dark mode */

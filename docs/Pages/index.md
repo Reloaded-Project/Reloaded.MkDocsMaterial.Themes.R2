@@ -5,7 +5,7 @@ hide:
 
 <div align="center">
 	<h1>The Reloaded MkDocs Theme</h1>
-	<img src="../Images/Reloaded-Icon.png" width="150" align="center" />
+	<img src="../Images/Reloaded-Icon.avif" width="150" align="center" />
 	<br/> <br/>
     A Theme for MkDocs Material.
     <br/>
@@ -72,7 +72,7 @@ theme:
 plugins:
   - search
   - exclude-unused-files:
-      file_types_to_check: [ "psd", "7z", "kra" ]
+      file_types_to_check: [ "psd", "7z", "kra", "avif" ]
       file_types_override_mode: append
       enabled: true
   - minify:
@@ -80,13 +80,14 @@ plugins:
       minify_js: true
       minify_css: true
       htmlmin_opts:
-      remove_comments: true
+        remove_comments: true
       cache_safe: true
   - exclude:
       # Exclude the Theme's own files.
       glob:
         - Reloaded/docs/Pages/index.md
         - Reloaded/docs/Pages/testing-zone.md
+        - Reloaded/docs/*.txt
         - Reloaded/.gitignore
         - Reloaded/Readme.md
         - Reloaded/LICENSE
