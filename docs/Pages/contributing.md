@@ -93,14 +93,3 @@ If you prefer to set up manually without scripts:
 
     Copy the address to your web browser and enjoy the live preview; any changes you save will be shown instantly.
 
-## Troubleshooting
-
-### Windows Symlink Issues
-
-If you are editing the **Reloaded.MkDocsMaterial.Themes.R2** (this wiki's theme) repository on Windows, it might be a good idea to run:
-
-```bash
-git config core.symlinks true
-```
-
-This allows git to create symlinks on clone.

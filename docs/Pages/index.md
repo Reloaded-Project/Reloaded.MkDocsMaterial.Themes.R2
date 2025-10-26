@@ -38,7 +38,7 @@ extra:
       link: https://twitter.com/thesewer56?lang=en-GB
 
 extra_css:
-  - Reloaded/Stylesheets/extra.css
+  - Reloaded/docs/Stylesheets/extra.css
 
 markdown_extensions:
   - admonition
@@ -78,11 +78,11 @@ plugins:
   - exclude:
       # Exclude the Theme's own files.
       glob:
-        - Reloaded/Pages/*
-        - Reloaded/docs/*
-        - Reloaded/Readme.md
-        - Reloaded/LICENSE
-        - Reloaded/mkdocs.yml
+        - Reloaded/docs/Pages/*
+        - Reloaded/docs/docs/*
+        - Reloaded/docs/Readme.md
+        - Reloaded/docs/LICENSE
+        - Reloaded/docs/mkdocs.yml
 
 nav:
   - Home: index.md

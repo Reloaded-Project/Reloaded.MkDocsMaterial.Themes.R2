@@ -49,7 +49,7 @@ plugins:
   - search
   - redirects:
       redirect_maps:
-        'index.md': 'Pages/index.md'
+        "index.md": "Pages/index.md"
 
 nav:
   - Home: Pages/index.md
