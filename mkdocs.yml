@@ -56,10 +56,10 @@ plugins:
       cache_safe: true
   - redirects:
       redirect_maps:
-        "index.md": "Pages/index.md"
+        "index.md": "Pages/private/index.md"
 
 nav:
-  - Home: Pages/index.md
+  - Home: Pages/private/index.md
   - License: Pages/license.md
   - Contributing: Pages/contributing.md
-  - Testing Zone: Pages/testing-zone.md
+  - Testing Zone: Pages/private/testing-zone.md

@@ -5,9 +5,9 @@ hide:
 
 <div align="center">
 	<h1>The Reloaded MkDocs Theme</h1>
-	<img src="../Images/Reloaded-Icon.avif" width="150" align="center" />
+	<img src="../../Images/Reloaded-Icon.avif" width="150" align="center" />
 	<br/> <br/>
-    A Theme for MkDocs Material.
+    A Theme for MkDocs Material. (Version 1.0.0)
     <br/>
     That resembles the look of <i>Reloaded</i>.
 </div>
@@ -85,8 +85,7 @@ plugins:
   - exclude:
       # Exclude the Theme's own files.
       glob:
-        - Reloaded/docs/Pages/index.md
-        - Reloaded/docs/Pages/testing-zone.md
+        - Reloaded/docs/Pages/private/*
         - Reloaded/docs/*.txt
         - Reloaded/.gitignore
         - Reloaded/Readme.md
@@ -135,13 +134,22 @@ jobs:
 
 - Copy `docs/requirements.txt` from this repository to your repository.
 
+
+- Inside your markdown, put the following line verbatim:
+  
+    ```markdown
+    <!--- Reloaded.MkDocsMaterial.Themes.R2:1.0.0 --->
+    ```
+
+    This will help you follow 'migration guides' in the future when posted here.
+
 - Push to GitHub, this should produce a GitHub Pages site.
 
 Your page should then be live.
 
 !!! tip
 
-    Refer to [Contributing](contributing.md#website-live-preview) for instructions on how to locally edit and modify the wiki.
+    Refer to [Contributing](../contributing.md#website-live-preview) for instructions on how to locally edit and modify the wiki.
 
 !!! note
 
