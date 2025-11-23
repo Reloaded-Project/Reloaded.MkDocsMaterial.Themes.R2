@@ -55,6 +55,7 @@ Run the automated setup script from the project root:
 
 ```bash
 python3 start_docs.py
+# or `python start_docs.py`
 ```
 
 This script will:
@@ -75,6 +76,7 @@ If you prefer to set up manually without scripts:
     
     # Create virtual environment (only needs to be done once)
     python3 -m venv venv
+    # or `python -m venv venv`
     
     # Activate virtual environment (do this each time you work)
     source venv/bin/activate  # On Windows: venv\Scripts\activate
